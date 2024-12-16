@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop Crocs</title>
+    <link rel="stylesheet" href="shop.css">
+</head>
+<body>
+    <header>
+        <h1>Shop the Latest Crocs</h1>
+        <p>Find your perfect pair today!</p>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#categories">Categories</a></li>
+                <li><a href="#products">All Products</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="categories">
+        <h2>Shop by Category</h2>
+        <div class="categories">
+            <div class="category">
+                <img src="img/classic-clogs.jpg" alt="Classic Crocs">
+                <h3>Classic Clogs</h3>
+                <p>Timeless, comfortable, and versatile.</p>
+            </div>
+            <div class="category">
+                <img src="img/sandals.jpg" alt="Sandals">
+                <h3>Sandals</h3>
+                <p>Perfect for summer vibes.</p>
+            </div>
+            <div class="category">
+                <img src="img/slides.jpg" alt="Slides">
+                <h3>Slides</h3>
+                <p>Convenience meets style.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="products">
+        <h2>Our Products</h2>
+        <div class="products-grid">
+            <div class="product">
+                <img src="img/classic-clogs.jpg" alt="Classic Crocs">
+                <h3>Classic Clogs Crocs</h3>
+                <p>&#8369; 2279.50</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="img/sandals.jpg" alt="Sandals">
+                <h3>Sandals</h3>
+                <p>&#8369; 1709.50</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="img/slides.jpg" alt="Red Slides">
+                <h3>Slides</h3>
+                <p>&#8369; 1424.50</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Have questions? Reach out to us:</p>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" placeholder="Your Name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <button id="view-cart">View Cart (0)</button>
+
+    <div id="cart-modal" class="hidden">
+        <div class="cart-content">
+            <h2>Your Cart</h2>
+            <div id="cart-items"></div>
+            <div id="cart-total">
+                <p>Total: &#8369;<span id="total-price">0.00</span></p>
+            </div>
+            <button id="checkout">Checkout</button>
+            <button id="close-cart">Close</button>
+        </div>
+    </div>
+
+    <script src="shop.js"></script>
+    <footer>
+        <p>&copy; 2023 Crocs Inc. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,145 @@
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(180deg, #fff, #f9f9f9);
+    color: #333;
+}
+
+header {
+    text-align: center;
+    background: linear-gradient(90deg, #ffcc00, #ffdd44);
+    color: #333;
+    padding: 20px 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 2.8em;
+    margin: 0;
+}
+
+header p {
+    font-size: 1.2em;
+    margin: 10px 0 20px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 1.1em;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #000;
+}
+
+section {
+    padding: 50px 20px;
+    text-align: center;
+    margin: 20px auto;
+    border-radius: 10px;
+    max-width: 900px;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#features ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+#features ul li {
+    margin: 10px 0;
+    font-size: 1.1em;
+    padding-left: 20px;
+    position: relative;
+}
+
+#features ul li::before {
+    content: '✔';
+    position: absolute;
+    left: 0;
+    color: #ffcc00;
+}
+
+.product {
+    display: inline-block;
+    width: 250px;
+    margin: 20px;
+    border-radius: 10px;
+    background: #f9f9f9;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.product:hover {
+    transform: scale(1.05);
+}
+
+.product img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+blockquote {
+    font-style: italic;
+    color: #555;
+    margin: 20px auto;
+    max-width: 600px;
+}
+
+blockquote p {
+    font-size: 1.2em;
+}
+
+blockquote cite {
+    display: block;
+    margin-top: 10px;
+    font-size: 0.9em;
+    color: #888;
+}
+
+#cta {
+    background: linear-gradient(90deg, #ffcc00, #ffdd44);
+    padding: 30px;
+    border-radius: 10px;
+}
+
+#cta a.shop-now {
+    text-decoration: none;
+    background: #333;
+    color: #fff;
+    padding: 12px 24px;
+    border-radius: 6px;
+    font-size: 1.2em;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+#cta a.shop-now:hover {
+    background: #555;
+}
+
+footer {
+    text-align: center;
+    background: #333;
+    color: #fff;
+    padding: 15px 0;
+    font-size: 0.9em;
+}
